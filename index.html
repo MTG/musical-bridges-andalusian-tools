@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Andalusian tools</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Laila:300,400,500,600,700&amp;subset=devanagari,latin-ext" rel="stylesheet">
+    <script src="scripts/p5.min.js"></script>
+    <script src="scripts/p5.dom.min.js"></script>
+    <script src="scripts/p5.sound.min.js"></script>
+    <script src="scripts/nawbaSketch.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a id="language" href="en/index.html">
+        <img id="flag" src="images/english.png" alt="spanish flag">
+        English
+      </a>
+    </nav>
+    <main>
+      <h2>Visualizador de <i>ṣanāʾiʿ</i></h2>
+      <p></p>
+      <p>Para una descripción más detallada sobre cómo usar este visualizador, mira las <a href="#instructions">instrucciones</a> debajo.</p>
+      <div id="sketch-holder">
+       <a id="info-link" target="_blank" a:link="text-decoration: none"></a>
+       <div id="cento-checkboxes"></div>
+     </div>
+     <h3 id="instructions">Instrucciones</h3>
+     <p id="nota"><b>Nota:</b> Esta herramienta está aún en desarrollo y puede experimentar algunos problemas. Para un rendimiento óptimo, se recomienda usarla en un ordenador (el uso en tablets y teléfonos móviles puede ser demasiado lento y ocasionar problemas de sincronización) y con el navegador <a href="https://www.google.com/chrome/">Chrome</a>.</p>
+     <ol>
+       <li>Para empezar a utilizar el visualizador de ṣanāʾiʿ, selecciona una grabación del menú desplegable de arriba a la izquierda. Puedes cambiar de grabación en cualquier momento. El título de la grabación y el nombre de la orquesta que la interpreta aparecerán arriba en el visualizador. De acuerdo con el uso habitual, el título de la grabación está compuesto por el mīzān y el ṭabʿ interpretados. En la esquina superior derecha aparecerá el indicador "+info". Pulsando aquí con el ratón se abrirá en una nueva pestaña la página de <a href="https://musicbrainz.org/">MusicBrainz</a> correspondiente a la grabación seleccionada, con toda la información sobre la misma.</li>
+       <li>Una vez que la grabación está cargada, puedes reproducirla o pausarla pulsando el botón "Toca", también arriba a la izquierda.</li>
+       <li>El visualizador está divido en tres paneles. El panel superior contiene dos ventanas.
+         <ul>
+           <li>En la izquierda se puede ver la lista de los centones correspondientes al ṭabʿ interpretado que se encuentran en la grabación. Cada centón tiene un color asignado, correspondiente a los recuadros que lo indican en los paneles central e inferior. Desactivando la casilla que precede a un particular centón, este dejará de visualizarse en los paneles central e inferior, y puede volver a visualizarse en cualquier momento activando la misma casilla. Durante la reproducción de la grabación, cuando un centón está siendo interpretado su nombre se agranda. </li>
+           <li>En la ventana derecha se pueden ver los versos de la ṣanʿa interpretada en la grabación, incluyendo repeticiones de versos, secciones cantadas sin texto, y secciones intrumentales. Cuando un verso, u otra sección, está siendo interpretado, el fondo se marcará con un color oliva. Se puede pulsar con el ratón encima de un verso, o sección, para que la reproducción salte al comienzo del mismo. Si hay más versos de los que se pueden ver en la ventana, estos aparecerán cuando la reproducción llegue a ese punto (también se puede llegar a ellos usando el navegador del panel inferior, ver el punto 5). Pulsando el botón "العربية", arriba a la izquierda bajo el botón para reproducir o pausar, se pueden ver los versos, y también el título y la orquesta, en su árabe original.</li>
+         </ul>
+       </li>
+       <li>El panel central muestra diferentes características del verso o la sección que se está interpretando en ese momento (y que aperece señalado en un color oliva tanto en la ventana de la ṣanʿa como en el navegador inferior). Las características que se pueden visualizar son las siguientes.
+         <ul>
+           <li>La línea melódica, que aparece en el fondo de color negro.</br><span style="font-size:0.85em;">NOTA: Esta línea se ha obtenido mediante <a target="_blank" href="https://github.com/sertansenturk/predominantmelodymakam">análisis automático</a>. El caracter heterofónico de esta tradición musical, el número de voces e instrumentos que intervienen, y la calidad de algunas grabaciones históricas pueden producir que el resultado de esta línea melódica no sea óptimo y contenga errores.</span></li>
+           <li>La escala propia del ṭabʿ interpretado, mediante líneas grises finas horizontales. El nombre de la nota correspondiente puede verse a la derecha del panel. Estas líneas pueden ocultarse deseleccionando la casilla "Escala", en la esquina superior derecha de ese panel central.</li>
+           <li>Los grados relevantes del ṭabʿ interpretado. El grado fundamental se marca con una línea gruesa roja, y con el acrónimo "<b>GF</b>" a la izquierda del panel. Los grados principales se marcan con líneas rojas más finas y con el acrónimo "gp". El grado persistente se indica con una línea naranja gruesa y el acrónimo "GP". Cada una de estas líneas puede ocultarse deseleccionando las correspondientes casillas en la parte inferior del panel.</li>
+           <li>Las pulsaciones correspondientes al mīzān interpretado, mediante líneas verticales violetas. Las líneas gruesas corresponden a un toque "dum" y las finas a un toque "tak". Estas líneas pueden ocultarse deseleccionando la casilla "Pulsaciones" en la esquina superior izquierda del panel</li>
+           <li>Finalmente, superpuestos a todo esto, pueden verse cuadros de colores correspondientes a los centones. En la esquina superior izquierda de cada cuadro puede verse el número que identifica al centón. Deseleccionando la casilla del centón correspondiente en la ventana "Centones" del panel superior, los cuadores de dicho centón se ocultarán.</li>
+         </ul>
+         Durante la reproducción de la grabación, un cursor vertical de color verde claro irá avanzando, indicando el instante correspondiente que está sonando. Pulsando con el ratón en cualquier punto de este panel central, la reproducción saltará a ese punto concreto.
+       </li>
+       <li>El panel inferior consiste en un navegador general de toda la grabación, y muestra ciertos elementos de su estructura. Los cuadros grises corresponden a los versos o secciones cantadas, mientras que los espacios en blanco corresponden a las secciones instrumentales. Cuando un verso o una sección está siendo interpretada, se marcará de color oliva. Los cuadros de colores corresponden a los centones. Deseleccionando un centón particular en la ventana "Centones", sus correspondientes cuadros se ocultarán también en este navegador general. Durante la reproducción de la grabación, un cursor vertical de color verde claro irá avanzando, indicando el instante correspondiente que está sonando. Pulsando con el ratón en cualquier punto del navegador, la reproducción saltará a ese punto concreto. Si se pulsa en un punto correspondiente a un verso o una sección no visible en la ventana de la ṣanʿa, dicho verso o sección aparecerá en esta ventana.</li>
+     </ol>
+     <p></p>
+     <p>Las características de cada ṭabʿ, tales como la escala, los grados relevantes, y los correspondientes centones, han sido tomados de la obra del músico y teórico Amin Chaachoo <i>La musique hispano-arabe, al-Ala</i> (París: L'Harmattan, 2016).</p>
+     <p>La traducción de las ṣanāʾiʿ mostradas han sido tomadas de la publicación del arabista Fernando Valderrama Martínez <i>El cancionero de al-Ḥāʾik</i> (Tetuán: Editora Marroquí, 1954).</p>
+    </main>
+    <section id="credits">
+     <p>Todo el contenido de esta página está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional</a>.<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a></p>
+   </section>
+    <footer>
+      <span> <a href="https://www.upf.edu/web/musicalbridges"><img id="musicalbridges" src="images/musicalbridges.png" alt="Logo de Musical Bridges"></a></span>
+    </footer>
+  </body>
+</html>

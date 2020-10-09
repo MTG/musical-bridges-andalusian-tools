@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+}
+
+/* html, body {
+  height: 100%;
+} */
+
+body {
+  font-family: sans-serif;
+  color: #353430;
+  background-image: linear-gradient(white, #C8A2E5);
+  /* background-color: black; */
+  width: 100%;
+}
+
+nav, main, section, footer {
+  background-color: white;
+  width: 1070px;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+
+nav {
+  /* text-align: right; */
+  height: 1em;
+  margin-bottom: 2px;
+}
+
+#language {
+  font-size: 0.8em;
+}
+
+#flag {
+  height: 0.8em;
+}
+
+#home {
+  float: right;
+  font-size: 1em;
+}
+
+main {
+  height: 100%;
+}
+
+h1, h2, h3{
+  color: #79489F;
+}
+
+h1 {
+  font-weight: normal;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+h3 {
+  padding: 10px 0px 10px;
+}
+
+p {
+  text-align: justify;
+  padding-bottom: 1em;
+}
+
+#icon {
+  display: inline;
+  height: 1em;
+}
+
+li {
+  text-align: justify;
+  padding-bottom: 0.5em;
+}
+
+#sketch-holder {
+  border: 3px inset;
+}
+
+#nota {
+  font-size: 0.85em;
+  padding: 10px 20px;
+  border: 1px solid #353430;
+  margin-bottom: 1em;
+}
+
+a:link {text-decoration: none;}
+a#info-link:link, a#info-link:visited, a#sa-info-link:link, a#sa-info-link:visited {color: rgba(0, 0, 0, 0.5); font-weight: bold;}
+a#info-link:hover, a#info-link:active {color: rgb(249, 134, 50);}
+a#sa-info-link:hover, a#sa-info-link:active {color: rgb(120, 0, 0);}
+
+footer {
+  margin-top: 2px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+img {
+  display: inline-block;
+}
+
+section {
+  background-color: white;
+  width: 1070px;
+  margin: 2px auto;
+  padding: 10px 30px;
+  height: 100%;
+  font-size: 0.8em;
+}
+
+section p {
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+#musicalbridges {
+  height: 50px;
+}
+
+footer span {
+  color: #79489F;
+  font-weight: bold;
+}
