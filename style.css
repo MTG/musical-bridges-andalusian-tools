@@ -116,7 +116,7 @@ section {
 }
 
 section p {
-  padding-bottom: 0px;
+  padding-bottom: 0.5em;
   text-align: center;
 }
 
@@ -124,7 +124,22 @@ section p {
   height: 50px;
 }
 
-footer span {
+.logo {
+  height: 50px;
+}
+
+/* footer span {
   color: #79489F;
   font-weight: bold;
+} */
+
+footer div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer p {
+  font-size: 0.8em;
+  padding-bottom: 0.5em;
+  /* text-align: center; */
 }
