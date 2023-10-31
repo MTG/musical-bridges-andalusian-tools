@@ -22,14 +22,35 @@
       <p></p>
       <p>For a more detailed description about how to use this visualizer, please read the <a href="#instructions">instructions</a> below.</p>
       <div id="sketch-holder">
-       <a id="info-link" target="_blank" a:link="text-decoration: none"></a>
-       <div id="cento-checkboxes"></div>
-     </div>
-     <h3 id="instructions">Instructions</h3>
-     <p id="nota"><b>Note:</b> This tool still is work in progress and might experience some malfunctions. For an optimal performance, it is advised to use it in a computer (its use in tablets and cellphones might be too slow and cause synchronization problems) and with the browser <a href="https://www.google.com/chrome/">Chrome</a>.</p>
-     <ol>
-       <li></li>
-     </ol>
+        <a id="info-link" target="_blank" a:link="text-decoration: none"></a>
+        <div id="cento-checkboxes"></div>
+      </div>
+      <h3 id="instructions">Instructions</h3>
+      <p id="nota"><b>Note:</b> This tool still is work in progress and might experience some malfunctions. For an optimal performance, it is advised to use it in a computer (its use in tablets and cellphones might be too slow and cause synchronization problems) and with the browser <a href="https://www.google.com/chrome/">Chrome</a>.</p>
+      <ol>
+        <li>To start using the ṣanāʾiʿ visualizer, select a recording from the drop-down menu at the top left. You can change the recording at any time. The recording's title and the orchestra's name will appear at the top in the visualizer. In accordance with common practice, the recording's title consists of the mīzān and the interpreted ṭabʿ. In the upper right corner, you will find the "+info" indicator. By clicking on it, a new tab will open, leading to the <a href="https://musicbrainz.org/">MusicBrainz</a> page related to the selected recording, with all the information about it.</li>
+        <li>Once the recording is loaded, you can play or pause it by clicking the "Play" button, also located at the top left.</li>
+        <li>The visualizer is divided into three panels. The top panel contains two windows.
+          <ul>
+            <li>On the left, you can see the list of centones corresponding to the interpreted ṭabʿ in the recording. Each centon has an assigned color, matching the boxes in the central and lower panels. By unchecking the box next to a specific centon, it will no longer be visible in the central and lower panels, and you can make it visible again at any time by rechecking the same box. During the playback of the recording, when a centon is being interpreted, its name will enlarge.</li>
+            <li>On the right window, you can see the verses of the ṣanʿa performed in the recording, including repetitions of verses, sections sung without text, and instrumental sections. When a verse or another section is being interpreted, the background will be marked with an olive color. You can click on a verse or section with the mouse to jump to the beginning of it. If there are more verses than can be seen in the window, they will appear when the playback reaches that point (you can also reach them using the browser in the lower panel, see point 5). By clicking the "العربية" button, located at the top left below the play or pause button, you can view the verses, as well as the title and orchestra, in their original Arabic.</li>
+          </ul>
+        </li>
+        <li>The central panel displays various features of the verse or section currently being interpreted (marked in olive in both the ṣanʿa window and the lower browser). The features that can be viewed are as follows:
+          <ul>
+            <li>The melodic line, displayed in the black background.<br/><span style="font-size:0.85em;">NOTE: This line has been obtained through <a target="_blank" href="https://github.com/sertansenturk/predominantmelodymakam">automatic analysis</a>. The heterophonic nature of this musical tradition, the number of voices and instruments involved, and the quality of some historical recordings may result in suboptimal results and errors in this melodic line.</span></li>
+            <li>The scale of the interpreted ṭabʿ, represented by thin horizontal gray lines. The note's name can be seen on the right side of the panel. These lines can be hidden by deselecting the "Scale" box in the upper right corner of the central panel.</li>
+            <li>The relevant degrees of the interpreted ṭabʿ. The fundamental degree is marked with a thick red line and the acronym "<b>GF</b>" on the left side of the panel. The main degrees are indicated with thinner red lines and the acronym "gp." The persistent degree is indicated with a thick orange line and the acronym "GP." Each of these lines can be hidden by deselecting the corresponding boxes at the bottom of the panel.</li>
+            <li>The beats corresponding to the interpreted mīzān, represented by vertical violet lines. Thick lines correspond to a "dum" stroke, and thin lines correspond to a "tak" stroke. These lines can be hidden by deselecting the "Beats" box in the upper left corner of the panel.</li>
+            <li>Finally, overlaid on all of this, you can see colored squares corresponding to the centones. In the upper left corner of each square, you can see the number identifying the centon. By unchecking the box for the corresponding centon in the "Centones" window of the top panel, the squares for that centon will be hidden.</li>
+          </ul>
+          During the playback of the recording, a light green vertical cursor will advance, indicating the corresponding moment that is playing. By clicking the mouse anywhere on this central panel, the playback will jump to that specific point.
+        </li>
+        <li>The lower panel is a general browser of the entire recording and shows certain elements of its structure. Gray boxes correspond to sung verses or sections, while white spaces correspond to instrumental sections. When a verse or section is being interpreted, it will be marked in olive color. Colored squares correspond to centones. By deselecting a particular centon in the "Centones" window, its corresponding squares will also be hidden in this general browser. During the playback of the recording, a light green vertical cursor will advance, indicating the corresponding moment that is playing. By clicking the mouse anywhere on the browser, the playback will jump to that specific point. If you click on a point corresponding to a verse or section not visible in the ṣanʿa window, that verse or section will appear in this window.</li>
+      </ol>
+      <p></p>
+      <p>The features of each ṭabʿ, such as the scale, relevant degrees, and corresponding centones, have been taken from the work of the musician and theorist Amin Chaachoo's <i>La musique hispano-arabe, al-Ala</i> (Paris: L'Harmattan, 2016).</p>
+      <p>The translation of the ṣanāʾiʿ shown has been taken from the publication of the Arabist Fernando Valderrama Martínez's <i>El cancionero de al-Ḥāʾik</i> (Tetuan: Editora Marroquí, 1954).</p>
     </main>
     <section>
       <p>This tool was created by Rafael Caro Repetto in the <a href="https://www.upf.edu/web/musicalbridges" target="_blank">Musical Bridges</a> project.</p>
